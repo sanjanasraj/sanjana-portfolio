@@ -1,0 +1,520 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #faf7f2;
+    color: #39332e;
+    line-height: 1.7;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 247, 242, 0.95);
+    padding: 18px 8%;
+    z-index: 1000;
+    border-bottom: 1px solid #e9dfd2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #795b43;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #39332e;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a77c55;
+}
+
+/* Home Section */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 10% 70px;
+    background: linear-gradient(120deg, #faf7f2, #eee3d5);
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.intro {
+    color: #a77c55;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.home h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    margin-bottom: 12px;
+}
+
+.home h1 span {
+    color: #9b7452;
+}
+
+.home h3 {
+    font-size: 22px;
+    color: #786454;
+    margin-bottom: 18px;
+}
+
+.home p {
+    font-size: 16px;
+    color: #71675e;
+    max-width: 550px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 12px 30px;
+    background-color: #795b43;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #5d4331;
+    transform: translateY(-3px);
+}
+
+/* Common Section Styling */
+section:not(.home) {
+    padding: 90px 10%;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #795b43;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    background-color: #fffdf9;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #71675e;
+    font-size: 16px;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #f1e9df;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skill-list div {
+    background-color: #fffdf9;
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: #795b43;
+    font-weight: 600;
+    border: 1px solid #e2d5c7;
+    transition: 0.3s;
+}
+
+.skill-list div:hover {
+    background-color: #795b43;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Projects Section */
+.projects {
+    background-color: #fffdf9;
+}
+
+.project-card {
+    background-color: #faf7f2;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 10px;
+    border-left: 4px solid #9b7452;
+    box-shadow: 0 5px 20px rgba(80, 60, 40, 0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #795b43;
+    margin-bottom: 10px;
+}
+
+/* Certifications Section */
+.certifications {
+    background-color: #f1e9df;
+    text-align: center;
+}
+
+.certifications p {
+    color: #71675e;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fffdf9;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+    color: #71675e;
+}
+
+/* Footer */
+footer {
+    background-color: #49392e;
+    color: #f8eee3;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .home {
+        padding: 150px 7% 70px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home h3 {
+        font-size: 18px;
+    }
+
+    section:not(.home) {
+        padding: 65px 7%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+}
+
+/* Active Navigation Link */
+.nav-links a.active {
+    color: #a77c55;
+    border-bottom: 2px solid #a77c55;
+    padding-bottom: 5px;
+}
+
+/* Home Buttons */
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #795b43;
+    border: 1px solid #795b43;
+}
+
+.secondary-btn:hover {
+    background-color: #795b43;
+    color: white;
+}
+
+.skills h3 {
+    text-align: center;
+    color: #795b43;
+    margin: 25px 0 18px;
+    font-size: 19px;
+}
+
+.skills .learning-title {
+    margin-top: 40px;
+}
+
+/* About Content */
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 25px 30px;
+    background-color: #faf7f2;
+    border-radius: 12px;
+    border: 1px solid #eee3d7;
+}
+
+.about-content p {
+    text-align: center;
+    line-height: 2;
+    color: #71675e;
+}
+
+/* Projects Section */
+.section-subtitle {
+    text-align: center;
+    color: #71675e;
+    margin-top: -12px;
+    margin-bottom: 35px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project-card {
+    position: relative;
+    background-color: #faf7f2;
+    padding: 30px;
+    border: 1px solid #e9dfd2;
+    border-radius: 12px;
+    border-left: 4px solid #9b7452;
+    box-shadow: 0 5px 20px rgba(80, 60, 40, 0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(80, 60, 40, 0.12);
+}
+
+.project-number {
+    color: #b99a7b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.project-card h3 {
+    color: #795b43;
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.project-card p {
+    color: #71675e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.project-tags span {
+    background-color: #eee3d7;
+    color: #795b43;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Mobile Project Layout */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Minimal Certifications Design */
+
+.certification-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+.certification-card {
+    background: #fffdf9;
+    padding: 25px;
+    border: 1px solid #e9dfd2;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(80, 60, 40, 0.07);
+}
+
+.certification-card h3 {
+    color: #795b43;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.certification-card p {
+    color: #71675e;
+    font-size: 13px;
+}
+
+.additional-learning {
+    text-align: center;
+    color: #8b7968;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .certification-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Internship Section */
+
+.internship {
+    background-color: #f1e9df;
+}
+
+.internship-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 35px;
+    background-color: #fffdf9;
+    border: 1px solid #e9dfd2;
+    border-left: 4px solid #9b7452;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(80, 60, 40, 0.08);
+}
+
+.internship-label {
+    color: #a77c55;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.internship-card h3 {
+    color: #795b43;
+    font-size: 23px;
+    margin: 15px 0 5px;
+}
+
+.internship-card h4 {
+    color: #8b7968;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.internship-card p {
+    color: #71675e;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+
+.contact {
+    background-color: #fffdf9;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.contact-item {
+    min-width: 220px;
+    padding: 25px;
+    background-color: #faf7f2;
+    border: 1px solid #e9dfd2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-item h3 {
+    color: #795b43;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #71675e;
+    font-size: 14px;
+}
