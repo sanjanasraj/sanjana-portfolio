@@ -33,7 +33,7 @@ const projectsContainer = document.querySelector(".projects-container");
 
 async function loadProjects() {
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/projects");
+        const response = await fetch("https://sanjana-portfolio-0xrz.onrender.com/api/projects");
 
         if (!response.ok) {
             throw new Error("Unable to load projects");
