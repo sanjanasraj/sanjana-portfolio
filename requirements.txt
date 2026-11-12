@@ -1,0 +1,5 @@
+Flask
+Flask-Cors
+pg8000
+python-dotenv
+gunicorn
